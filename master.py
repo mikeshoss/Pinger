@@ -1,15 +1,9 @@
 from flask import Flask, request, jsonify
 import json
-import smtplib  # For email notifications
 
 app = Flask(__name__)
 device_status = {}
 config = {}
-
-def send_notification(email, message):
-    # Placeholder for email notification logic
-    # You would need to configure SMTP settings and possibly use a library like smtplib
-    print(f"Sending email to {email} with message: {message}")
 
 @app.route('/get_tasks', methods=['GET'])
 def get_tasks():
