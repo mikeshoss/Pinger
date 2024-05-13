@@ -21,7 +21,7 @@ def get_tasks(master_ip, master_port, slave_id):
         return []
 
 if __name__ == '__main__':
-    master_ip = '192.168.1.100'  # IP of the master device
+    master_ip = '192.168.1.100'  # IP of the master device 
     master_port = '8080'
     slave_id = 'Slave1'  # Unique identifier for each slave
 
