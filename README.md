@@ -1,4 +1,4 @@
-## Raspberry Pi Network Monitoring System
+## Pinger: Raspberry Pi Network Monitoring System
 
 ### Description
 This project is designed to monitor the health and status of network devices using a network of Raspberry Pis. It utilizes Tailscale for secure communication between remote and local devices, providing a centralized dashboard to view the status of all monitored devices.
@@ -19,8 +19,8 @@ Before you begin, ensure you have the following:
 ### Installation
 1. **Clone the Repository**
    ```
-   git clone https://github.com/yourusername/network-monitoring-system.git
-   cd network-monitoring-system
+   git clone https://github.com/mikeshoss/Pinger.git
+   cd pinger
    ```
 
 2. **Install Required Python Packages**
@@ -68,9 +68,9 @@ Contributions are what make the open-source community such an amazing place to l
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ### Contact
-Your Name - example@example.com
+Your Name - mike.shoss@gmail.com
 
-Project Link: [https://github.com/yourusername/network-monitoring-system](https://github.com/yourusername/network-monitoring-system)
+Project Link: [https://github.com/mikeshoss/Pinger](https://github.com/mikeshoss/Pinger)
 
 ---
 
