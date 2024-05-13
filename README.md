@@ -1,10 +1,4 @@
-Creating a comprehensive README is crucial for any project, especially for open-source initiatives. Below is a README template for your Raspberry Pi network monitoring system. This document will guide users through setup, usage, and contribution.
-
-### README Template for Network Monitoring System
-
----
-
-## Project Title: Raspberry Pi Network Monitoring System
+## Raspberry Pi Network Monitoring System
 
 ### Description
 This project is designed to monitor the health and status of network devices using a network of Raspberry Pis. It utilizes Tailscale for secure communication between remote and local devices, providing a centralized dashboard to view the status of all monitored devices.
@@ -83,5 +77,3 @@ Project Link: [https://github.com/yourusername/network-monitoring-system](https:
 ### Additional Notes:
 - **Security**: Ensure all communication is secured and sensitive data is encrypted as needed.
 - **Updates**: Regularly update the system to handle new security patches for Raspberry Pi and Python dependencies.
-
-This README template provides all the essential information needed to get started with the project, manage it, and encourage others to contribute. Adjust the sections as necessary to fit the specifics of your project or any additional components you might add.
