@@ -1,0 +1,20 @@
+{
+    "Pingers": [
+        {
+            "name": "MasterPi",
+            "type": "master",
+            "ip": "xxx.xxx.xxx.xxx",
+            "mac": "xx:xx:xx:xx:xx:xx",
+            "tailscale_ip": "xxx.xxx.xxx.xxx"
+        }
+    ],
+    "Devices": [
+        {
+            "ping_group": "MasterPi",
+            "name": "Sample Device",
+            "ip": "xxx.xxx.xxx.xxx",
+            "mac": "xx:xx:xx:xx:xx:xx",
+            "tailscale_ip": "xxx.xxx.xxx.xxx"
+        }
+    ]
+}
