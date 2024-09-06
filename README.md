@@ -1,79 +1,39 @@
-## Pinger: Raspberry Pi Network Monitoring System
+**README.md**
 
-### Description
-This project is designed to monitor the health and status of network devices using a network of Raspberry Pis. It utilizes Tailscale for secure communication between remote and local devices, providing a centralized dashboard to view the status of all monitored devices.
+**Project Name:** Machine Wake-On-LAN Monitor
 
-### Features
-- **Device Monitoring:** Regular pings to check device availability.
-- **Dynamic Configuration:** Utilizes Tailscale API to automatically update device configurations.
-- **Web Interface:** Provides a real-time status dashboard accessible via a web browser.
-- **Notifications:** Sends alerts for device status changes.
+**Description:**
 
-### Prerequisites
-Before you begin, ensure you have the following:
-- Raspberry Pi devices (with Raspbian OS installed).
-- Internet connection for each Raspberry Pi.
-- Tailscale installed on each Raspberry Pi ([Installation Guide](https://tailscale.com/kb/1101/install-rpi/)).
-- Python 3.x installed on each Raspberry Pi.
+This Python script is designed to monitor the status of multiple machines and send Wake-On-LAN (WOL) packets if they are not responding. The script pulls machine details from a JSON file and checks their IP addresses for responsiveness. If a machine is not responding after a specified number of retries, the script sends a WOL packet to wake it up.
 
-### Installation
-1. **Clone the Repository**
-   ```
-   git clone https://github.com/mikeshoss/Pinger.git
-   cd pinger
-   ```
+**Installation:**
 
-2. **Install Required Python Packages**
-   ```
-   pip install -r requirements.txt
-   ```
+1. Create a directory for the project.
+2. Copy the `machines.json` and `ping_and_wol_all.py` files into the directory.
+3. Run the script using the command `python ping_and_wol_all.py`.
 
-3. **Setup Tailscale**
-   - Follow the instructions on the Tailscale website to connect each Raspberry Pi to your Tailnet.
+**Usage:**
 
-4. **API Key Configuration**
-   - Generate an API key from the Tailscale admin console with read access.
-   - Set this key as an environment variable or store it securely for the application to use.
+* The `machines.json` file contains a list of machines and their details, including name, IP address, MAC address, and operating system.
+* The `ports` dictionary in the JSON file specifies the port for sending WOL packets for each operating system.
+* The script will continuously monitor the machines and send WOL packets if necessary.
 
-### Configuration
-1. **API Key**
-   - Store your Tailscale API key in a secure location or environment variable.
+**Features:**
 
-2. **Modify `config.json.example`**
-   - Rename `config.json.example` to `config.json`.
-   - Update the configuration according to your network setup.
+* Pulls the latest machine details from the JSON file.
+* Checks for modified JSON files and reloads data accordingly.
+* Sends WOL packets to unresponsive machines.
+* Configurable number of retries before sending WOL packets.
+* Configurable interval for monitoring.
 
-### Usage
-- **Starting the Master Node Server**
-  ```
-  python master.py
-  ```
-- **Running Slave Nodes**
-  ```
-  python slave.py
-  ```
-- **Accessing the Dashboard**
-  - Open a web browser and navigate to `http://[master-ip-address]:8080/status` to view the network status dashboard.
+**Benefits:**
 
-### Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+* Automated monitoring of machine status.
+* Prompt notification of unresponsive machines.
+* Convenience and ease of use.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+**Usage Notes:**
 
-### License
-Distributed under the MIT License. See `LICENSE` for more information.
-
-### Contact
-Your Name - mike.shoss@gmail.com
-
-Project Link: [https://github.com/mikeshoss/Pinger](https://github.com/mikeshoss/Pinger)
-
----
-
-### Additional Notes:
-- **Security**: Ensure all communication is secured and sensitive data is encrypted as needed.
-- **Updates**: Regularly update the system to handle new security patches for Raspberry Pi and Python dependencies.
+* Ensure that the IP addresses in the JSON file are correct.
+* The script requires root privileges to send WOL packets.
+* The port numbers in the JSON file may vary depending on the specific hardware and configuration.

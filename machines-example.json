@@ -1,0 +1,29 @@
+{
+    "ports": {
+        "macOS": 9,
+        "Linux": 7,
+        "Windows": 7
+    },
+    "devices": {
+        "Device1": {
+            "name": "PlexBook Pro",
+            "ip": "xxx.xxx.xx.x",
+            "mac": "YY:YY:YY:YY:YY:YY",
+            "os": "macOS"
+        },
+        "Device2": {
+            "name": "AI Box",
+            "ip": "xxx.xxx.xx.x",
+            "mac": "YY:YY:YY:YY:YY:YY",
+            "os": "Linux"
+        },
+        "Device3": {
+            "name": "Home Assistant",
+            "ip": "xxx.xxx.xx.x",
+            "mac": "YY:YY:YY:YY:YY:YY",
+            "os": "Windows"
+        }
+    }
+}
+
+
