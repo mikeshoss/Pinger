@@ -1,6 +1,4 @@
-**README.md**
-
-**Project Name:** Machine Wake-On-LAN Monitor
+*Pinger*
 
 **Description:**
 
