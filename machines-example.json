@@ -1,0 +1,27 @@
+{
+    "ports": {
+        "macOS": 9,
+        "Linux": 7,
+        "Windows": 7
+    },
+    "devices": {
+        "Device1": {
+            "name": "Device1",
+            "ip": "",
+            "mac": "",
+            "os": "macOS"
+        },
+        "Device2": {
+            "name": "Device2",
+            "ip": "",
+            "mac": "",
+            "os": "Linux"
+        },
+        "Device3": {
+            "name": "Device3",
+            "ip": "",
+            "mac": "",
+            "os": "Windows"
+        }
+    }
+}
