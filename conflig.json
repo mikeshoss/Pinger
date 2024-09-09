@@ -1,0 +1,6 @@
+{
+    "retries": 7,
+    "retry_interval": 5,
+    "check_interval": 5
+  }
+  
